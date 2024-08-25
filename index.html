@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competencia de Cocina - Pantalla Dividida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="player-area" id="player1">
+            <h2>Jugador 1</h2>
+            <div class="score" id="score1">Puntos: 0</div>
+            <div class="order-display" id="order1">Pedido: -</div>
+            <div class="kitchen" id="kitchen1"></div>
+            <button class="submit-order" onclick="submitOrder(1)">Entregar Pedido</button>
+        </div>
+        <div class="player-area" id="player2">
+            <h2>Jugador 2</h2>
+            <div class="score" id="score2">Puntos: 0</div>
+            <div class="order-display" id="order2">Pedido: -</div>
+            <div class="kitchen" id="kitchen2"></div>
+            <button class="submit-order" onclick="submitOrder(2)">Entregar Pedido</button>
+        </div>
+    </div>
+    <div class="ingredients-container">
+        <div class="player-ingredients" id="ingredients1"></div>
+        <div class="player-ingredients" id="ingredients2"></div>
+    </div>
+    <div class="timer-container">
+        <div class="timer-bar" id="timer-bar"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
